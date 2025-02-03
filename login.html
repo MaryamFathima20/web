@@ -1,0 +1,31 @@
+
+<html>
+<head>
+<title>log in</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+</head>
+<body style="background-color:#e6ffee;">
+<U><I><center><h1 style="color:black">RAJAGIRI COLLEGE OF SOCIAL SCIENCES (AUTONOMOUS)</h1></center></I></U>
+<center><img src="logo.png"width=130,height=50></center>
+<hr>
+<i><center><h1>LOG IN</h1></i>
+<li>Username</li><input type= "text" id="w">
+<li>Password</li><input type = "password" id="q">
+<br>
+<br>
+<button onclick="mar()">SUBMIT</button>
+
+<script>
+function mar(){
+let Username = document.getElementById("w").value;
+let password = document.getElementById("q").value;
+let uname = localStorage.getItem("Username");
+let pass = localStorage.getItem("password");
+if(Username == uname && password == pass)
+{alert("you are valid");
+window.location.href="frontpage.html";
+}
+else{ alert("intruder");}
+}</script>
+</body>
+</html>

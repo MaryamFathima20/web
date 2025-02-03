@@ -1,0 +1,66 @@
+<html>
+<head>
+<title>registration</title>
+</head>
+<body style="background-color:#e6ffee;">
+<U><I><center><h1 style="color:black">RAJAGIRI COLLEGE OF SOCIAL SCIENCES (AUTONOMOUS)</h1></center></I></U>
+<img src="logo.png"width=130,height=50>
+<hr>
+<i><center><h2>Registration form</h2></i>
+</center>
+<br>
+<ol>
+<li>Name</li><input type= "text">
+<li>Age</li><input type= "number">
+<li>Gender</li><input type= "radio" name="gender"
+value="male">Male
+<input type="radio" name="gender"
+value="female">Female
+<li>Email</li><input type= "email">
+<li>Contact Number</li><input type= "number">
+<li>Address</li><input type= "text">
+
+</ol>
+<h3>COURSES</h3>
+<select name="items" id="cars">
+<option value="BCOM">BCOM</option>
+<option value="BBA">BBA</option>
+<option value="MSW">
+MSW</option>
+<option value="BSW">BSW</option>
+</select>
+<br>
+<h4>Category</h4>
+<select name="Category" id="Category">
+<option value="UG">UG</option>
+<option value="PG">PG</option>
+</select>
+<p>STUDENT SIGN UP</p>
+<li>Username</li><input type = "text" id="m">
+<br>
+<li>password</li><input type = "password" id="s">
+<br>
+<button onclick="ABC()">SUBMIT</button>
+<script>
+function ABC() {
+alert("Confirm submission");
+window.location.href="login.html";
+let Username=document.getElementById("m");
+let password=document.getElementById("s");
+localStorage.setItem("Username", Username.value);
+localStorage.setItem("password", password.value);
+//alert(localStorage.getItem("Username"));
+//alert(localStorage.getItem("password"));
+}
+</script>
+
+<hr>
+<h5>For more details</h5>
+<a href="mailto:bcomc2429@rajagiri.edu">Send email</a>
+<br>
+<a href="tel;+91000000">+91000000</a>
+
+
+</body>
+</html>
+
